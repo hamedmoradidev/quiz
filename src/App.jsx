@@ -28,7 +28,10 @@ export default function App() {
       setAnswers(prev => [...prev, 0])
     }
     if(currentQuestion == IeltsQuestions.length - 1){
-      setCorrectAnswers(answers.reduce((current, initial) => current + initial))
+      const isCorrect = option === IeltsQuestions[currentQuestion].answer
+      const updatedAnswer = [...answers, isCorrect ? 1 : 0]
+      const totalCorrect = updatedAnswer.reduce((sum, val) => sum + val)
+      setCorrectAnswers(totalCorrect)
       setResult(true)  
       setAssesment(false)
     }else{
@@ -36,7 +39,7 @@ export default function App() {
     }
   }
   return (
-    <div className='min-h-lvh w-full flex justify-center items-center *:md:w-1/2 bg-amber-100 p-5'>
+    <div className='min-h-lvh flex flex-wrap justify-center items-center *:md:w-1/2 bg-amber-100 px-5 lg:px-10'>
         {welcome && <Welcome startAssesment={startAssesment} />}
         {assesment && <Assesment currentQuestion={currentQuestion} handleAnswer={handleAnswer} />}
         {result && <Result reset={reset} correctAnswers={correctAnswers} />}
