@@ -1,205 +1,125 @@
-const ieltsQuestions = [
-    {
-      question: "What is the main reason governments are trying to reduce vehicle emissions?",
-      options: [
-        "To decrease the number of cars on the road",
-        "To promote the sale of electric vehicles",
-        "To improve air quality and support sustainability",
-        "To limit traffic congestion in rural areas"
-      ],
-      answer: "To improve air quality and support sustainability"
-    },
-    {
-      question: "What is the guest’s profession?",
-      
-      options: [
-        "Oceanographer",
-        "Marine biologist",
-        "Environmental activist",
-        "Deep-sea diver"
-      ],
-      answer: "Marine biologist"
-    },
-    {
-      question: "If he ______ earlier, he wouldn’t have missed the train.",
-      options: [
-        "leaves",
-        "had left",
-        "was leaving",
-        "would leave"
-      ],
-      answer: "had left"
-    },
-    {
-      question: "Which word is closest in meaning to “inevitable”?",
-      options: [
-        "Unlikely",
-        "Predictable",
-        "Avoidable",
-        "Unpreventable"
-      ],
-      answer: "Unpreventable"
-    },
-    {
-      question: "What is the main idea of the sentence about deforestation?",
-      options: [
-        "Trees produce carbon dioxide",
-        "Climate change causes deforestation",
-        "Cutting trees affects carbon absorption",
-        "Deforestation helps prevent climate change"
-      ],
-      answer: "Cutting trees affects carbon absorption"
-    },
-    {
-      question: "What was a major result of the industrial revolution?",
-      options: [
-        "More jobs in agriculture",
-        "Reduced demand for goods",
-        "Increased manual labor",
-        "Shift to machine-based production"
-      ],
-      answer: "Shift to machine-based production"
-    },
-    {
-      question: "Why do animals migrate?",
-      options: [
-        "To hibernate",
-        "To find mates",
-        "To avoid cold and hunger",
-        "To explore new territories"
-      ],
-      answer: "To avoid cold and hunger"
-    },
-    {
-      question: "What is one benefit of recycling?",
-      options: [
-        "It creates more waste",
-        "It uses more natural resources",
-        "It reduces natural resource use",
-        "It increases pollution"
-      ],
-      answer: "It reduces natural resource use"
-    },
-    {
-      question: "What is a reason for the rise in remote work?",
-      options: [
-        "To reduce company profits",
-        "To increase travel",
-        "To improve balance and flexibility",
-        "To avoid using technology"
-      ],
-      answer: "To improve balance and flexibility"
-    },
-    {
-      question: "What is the topic of the speaker’s talk?",
-      options: [
-        "Global pollution",
-        "Animal migration",
-        "Arctic climate change",
-        "Marine biodiversity"
-      ],
-      answer: "Arctic climate change"
-    },
-    {
-      question: "When does the library close on weekends?",
-      options: [
-        "6 p.m.",
-        "7 p.m.",
-        "8 p.m.",
-        "9 p.m."
-      ],
-      answer: "8 p.m."
-    },
-    {
-      question: "What does this imply about her routine?",
-      options: [
-        "She just started taking the train",
-        "She changes trains often",
-        "She has a regular schedule",
-        "She dislikes commuting"
-      ],
-      answer: "She has a regular schedule"
-    },
-    {
-      question: "What happened to the concert?",
-      options: [
-        "It started late",
-        "It was delayed",
-        "It was canceled",
-        "It went ahead as planned"
-      ],
-      answer: "It was delayed"
-    },
-    {
-      question: "What does this mean about the tickets?",
-      options: [
-        "They’re free",
-        "They're hard to find",
-        "They’re selling quickly",
-        "They're only sold in person"
-      ],
-      answer: "They’re selling quickly"
-    },
-    {
-      question: "If I ______ enough money, I would travel around the world.",
-      options: [
-        "have",
-        "had",
-        "would have",
-        "was having"
-      ],
-      answer: "had"
-    },
-    {
-      question: "She ______ to Paris before, so she knew all the good spots.",
-      options: [
-        "has gone",
-        "had been",
-        "is going",
-        "goes"
-      ],
-      answer: "had been"
-    },
-    {
-      question: "They ______ lunch when the phone rang.",
-      options: [
-        "have",
-        "were having",
-        "had had",
-        "had"
-      ],
-      answer: "were having"
-    },
-    {
-      question: "We’ll start the meeting as soon as everyone ______.",
-      options: [
-        "arrived",
-        "arrives",
-        "will arrive",
-        "has arriving"
-      ],
-      answer: "arrives"
-    },
-    {
-      question: "He’s the man ______ fixed my car.",
-      options: [
-        "which",
-        "who",
-        "whom",
-        "what"
-      ],
-      answer: "who"
-    },
-    {
-      question: "What is the meaning of “efficient”?",
-      options: [
-        "Fast but careless",
-        "Productive and accurate",
-        "Lazy but clever",
-        "Talkative"
-      ],
-      answer: "Productive and accurate"
-    }
-  ];
-  export default ieltsQuestions;
+const IeltsQuestions = [
+  {
+    question: "Which of the following is closest in meaning to 'inevitable'?",
+    options: ["Unlikely", "Unavoidable", "Temporary", "Unbelievable"],
+    answer: "Unavoidable"
+  },
+  {
+    question: "He insisted that he ___ nothing wrong.",
+    options: ["has done", "had done", "did", "was doing"],
+    answer: "had done"
+  },
+  {
+    question: "The meeting was postponed ___ the manager’s illness.",
+    options: ["because", "because of", "due", "so"],
+    answer: "because of"
+  },
+  {
+    question: "Which sentence is grammatically correct?",
+    options: [
+      "She don’t like coffee.",
+      "He going to the gym every day.",
+      "They has a dog.",
+      "She has been working all morning."
+    ],
+    answer: "She has been working all morning."
+  },
+  {
+    question: "The word 'abundant' is closest in meaning to:",
+    options: ["Scarce", "Limited", "Plentiful", "Rare"],
+    answer: "Plentiful"
+  },
+  {
+    question: "He has been working here ___ 2015.",
+    options: ["since", "for", "at", "by"],
+    answer: "since"
+  },
+  {
+    question: "Choose the correct passive form: 'They will finish the project by Monday.'",
+    options: [
+      "The project will be finish by Monday.",
+      "The project will have been finished by Monday.",
+      "The project will be finished by Monday.",
+      "They will be finishing the project by Monday."
+    ],
+    answer: "The project will be finished by Monday."
+  },
+  {
+    question: "Which option best completes the sentence: 'Not only ___ late, but he also forgot his notes.'",
+    options: ["he was", "was he", "he is", "is he"],
+    answer: "was he"
+  },
+  {
+    question: "The opposite of 'expand' is:",
+    options: ["enlarge", "reduce", "extend", "increase"],
+    answer: "reduce"
+  },
+  {
+    question: "If she ___ earlier, she would have caught the bus.",
+    options: ["left", "had left", "leaves", "was leaving"],
+    answer: "had left"
+  },
+  {
+    question: "Choose the correct word: 'The manager gave us a very ___ explanation.'",
+    options: ["clarify", "clarity", "clear", "clearly"],
+    answer: "clear"
+  },
+  {
+    question: "Which of these is a synonym for 'rapid'?",
+    options: ["slow", "fast", "lazy", "late"],
+    answer: "fast"
+  },
+  {
+    question: "She is used to ___ up early every day.",
+    options: ["get", "gets", "getting", "got"],
+    answer: "getting"
+  },
+  {
+    question: "Which sentence uses conditional type 2?",
+    options: [
+      "If I won the lottery, I would travel the world.",
+      "If I win the lottery, I will travel the world.",
+      "If I had won the lottery, I would have traveled.",
+      "If I win, I travel the world."
+    ],
+    answer: "If I won the lottery, I would travel the world."
+  },
+  {
+    question: "Choose the word that fits: 'The movie was so boring that I almost fell ___.'",
+    options: ["off", "away", "up", "asleep"],
+    answer: "asleep"
+  },
+  {
+    question: "Select the correct sentence:",
+    options: [
+      "There is too much people in the room.",
+      "She speaks English very good.",
+      "It’s important to get enough sleep.",
+      "He don’t like to drive."
+    ],
+    answer: "It’s important to get enough sleep."
+  },
+  {
+    question: "Which of the following best replaces 'frequently'?",
+    options: ["rarely", "seldom", "occasionally", "often"],
+    answer: "often"
+  },
+  {
+    question: "Which is the correct comparative form?",
+    options: ["More better", "Better", "More good", "Gooder"],
+    answer: "Better"
+  },
+  {
+    question: "Choose the correct preposition: 'He apologized ___ being late.'",
+    options: ["for", "to", "at", "with"],
+    answer: "for"
+  },
+  {
+    question: "She would rather you ___ the truth.",
+    options: ["tell", "told", "telling", "to tell"],
+    answer: "told"
+  }
+];
+
+export default IeltsQuestions;
   
