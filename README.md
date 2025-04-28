@@ -2,7 +2,7 @@
 
 A responsive and interactive quiz app built with **React 19** and **Tailwind CSS 4**.
 
-🌐 **Live Demo:** https://quiz-eight-puce-92.vercel.app/
+🌐 **Live Demo:** [quiz-eight-puce-92.vercel.app](https://quiz-eight-puce-92.vercel.app/)
 
 ![Project Screenshot](https://github.com/user-attachments/assets/1a66d022-9036-416c-9640-6bdc04a6d345)
 
