@@ -2,7 +2,7 @@ import React from 'react'
 import IeltsQuestions from './questions'
 export const Assesment = ({currentQuestion, handleAnswer}) => {
   return (
-    <div className='flex flex-wrap justify-center items-baseline w-full h-[600px]'>
+    <div className='flex flex-wrap justify-center items-baseline w-full h-[600px] md:w-1/2'>
         <h2 className='text-3xl font-semibold text-left w-full'>Question Number {currentQuestion+1}</h2>
         <p className='text-2xl w-full flex items-center text-justify'>{IeltsQuestions[currentQuestion].question}</p>
         <ul className='flex flex-wrap justify-center items-center w-full gap-3'>

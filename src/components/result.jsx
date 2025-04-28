@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Result = ({reset, correctAnswers}) => {
   return (
-    <div className='h-2/3 flex flex-wrap justify-center items-center gap-10 w-full'>
+    <div className='h-2/3 flex flex-wrap justify-center items-center gap-10 w-full md:w-1/2'>
         <h1 className='text-center text-3xl font-bold'>Congratulations...</h1>
         <h2 className='text-3xl font-semibold text-center w-full'>You answered {correctAnswers} out of 20 questions correctly</h2>
         <h2 className='text-3xl font-semibold text-center w-full'>Rating: % {parseInt(correctAnswers/20 * 100)}</h2>

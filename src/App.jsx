@@ -3,6 +3,7 @@ import Welcome from './components/welcome'
 import Assesment from './components/assesment'
 import Result from './components/result'
 import IeltsQuestions from './components/questions'
+import ContactMe from './components/ContactMe'
 export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [welcome, setWelcome] = useState(true)
@@ -39,10 +40,11 @@ export default function App() {
     }
   }
   return (
-    <div className='min-h-lvh flex flex-wrap justify-center items-center *:md:w-1/2 bg-amber-100 px-5 lg:px-10'>
+    <div className='min-h-lvh flex flex-wrap justify-center items-center bg-amber-100 px-5 lg:px-10'>
         {welcome && <Welcome startAssesment={startAssesment} />}
         {assesment && <Assesment currentQuestion={currentQuestion} handleAnswer={handleAnswer} />}
         {result && <Result reset={reset} correctAnswers={correctAnswers} />}
+        <ContactMe />
     </div>
   )
 }
